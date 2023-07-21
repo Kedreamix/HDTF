@@ -46,8 +46,17 @@ When using HDTF dataset,
 
 - We resize all cropped videos into **512 x 512** resolution.
 
-
 The HDTF dataset is available to download under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> Creative Commons Attribution 4.0 International License</a>. **Thanks @universome for provding the the script of data processing, pls visit [here](https://github.com/universome/HDTF) for more details.** If you face any problems when processing HDTF, pls contact me.
+
+## Downloading
+
+For convenience, we added the `download.py` script which downloads, crops and resizes the dataset. You can use it via the following command:
+
+```
+python download.py --output_dir /path/to/output/dir --num_workers 8
+```
+
+Note: some videos might become unavailable if the authors will remove them or make them private.
 
 ## Inference code
 #### code of audio-to-animation
